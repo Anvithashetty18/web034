@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Aria, Helvetica, sans-serif;
+            background-color: white;
+            background-image: url(dark.webp);
+        }
+
+        .div1 {
+            text-align: center;
+            padding: 41px;
+            background-color: beige;
+            border: 2px solid black;
+            border-radius: 40px;
+            border-style: outset;
+            border-width: 2px;
+            padding-left: 20px;
+            font-style: initial;
+            margin-top: 20px;
+            margin-bottom: 100px;
+            margin-right: 274px;
+            margin-left: 320px;
+            font-size: large;
+
+        }
+
+        .registerbtn {
+            background-color: #080606;
+            color: #f7faff;
+            padding: 17px 33px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 25%;
+            opacity: 0.5;
+        }
+
+        .registerbtn:hover {
+            opacity: 1;
+        }
+
+        .mem {
+            padding: 3px 3px 3px 3px;
+            
+        }
+
+        .design {
+            padding: 3px 52px 3px 5px;
+            
+        }
+
+        .gender {
+            padding: 3px 7px 3px 3px;
+            
+        }
+
+        .dob {
+            padding: 3px 61px 3px 3px;
+        }
+
+        .phone {
+            padding: 3px 3px 3px 14px;
+        }
+
+        .email {
+            padding: 3px 85px 3px 3px;
+        }
+        h2{
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>
+        <center> <u>ISE CLUB</u></center>
+    </h2>
+    <br>
+    <form action="action.php">
+        <div class="div1">
+            <div class="mem">
+                <label for="memname"><b>MEMBER NAME :</b></label>
+                <input type="text" placeholder="Enter name" >
+            </div>
+            <br>
+            <div class="design">
+                <label for="desgname"><b>DESIGNATION : </b></label>
+                <select name="jobrole" id="Designation">
+                    <option value="select">Select</option>
+                    <option value="Staff">Staff</option>
+                    <option value="Faculty">Assistant Professor</option>
+                    <option value="HOD">HOD</option>
+                    <option value="lab">Lab Attender</option>
+
+                </select>
+            </div>
+            <br>
+            <div class="gender">
+                <label for="gender"><b>GENDER : </b></label>
+                <input type="radio" name="gender" value="male"> Male
+                <input type="radio" name="gender" value="female"> Female
+                <input type="radio" name="gender" value="other"> Other <br>
+            </div>
+            <br>
+            <div class="dob">
+                <label for="dob"><b>DATE OF BIRTH : </b></label>
+                <input type="date" id="birthday" name="birthday">
+            </div>
+            <br>
+            <div class="phone">
+                <label for="phone"> <b>PHONE NUMBER :</b></label>
+                <input type="tel" placeholder="Enter phone number" id="phone" name="phone">
+            </div>
+            <br>
+            <div class="email">
+                <label for="email"><b>EMAIL :</b></label>
+                <input type="text" placeholder="Enter Email" name="email" id="email">
+            </div>
+            <br>
+            <div>
+                <button type="submit" class="registerbtn">
+                    <center>SUBMIT</center>
+                </button>
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>
